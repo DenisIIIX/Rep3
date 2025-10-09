@@ -31,6 +31,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+Lab3_1
     <Reference Include="PresentationCore" />
     <Reference Include="RevitAPI">
       <HintPath>..\..\..\..\..\..\..\Program Files\Autodesk\Revit 2019\RevitAPI.dll</HintPath>
@@ -43,22 +44,30 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xaml" />
+
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+ master
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+ Lab3_1
     <Reference Include="WindowsBase" />
+
+master
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+Lab3_1
   <ItemGroup>
     <Content Include="png\button.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-  </ItemGroup>
+ master
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

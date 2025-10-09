@@ -1,4 +1,5 @@
 ﻿
+Lab3_1
 using Autodesk.Revit.Attributes;
 using Autodesk.Revit.UI;
 using System;
@@ -28,6 +29,11 @@ namespace Intro
         public Result OnShutdown(UIControlledApplication application)
         {
             return Result.Succeeded;
-        }
+
+namespace Intro
+{
+    public class ApplicationClass
+    {
+ master
     }
 }
