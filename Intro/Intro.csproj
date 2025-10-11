@@ -4,7 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+
+    <ProjectGuid>10bb9683-b2e9-40cc-ad8e-392acff84240</ProjectGuid>
+
     <ProjectGuid>{F8E2C922-A6B3-42FF-9304-3A2A7FA66A9D}</ProjectGuid>
+
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Intro</RootNamespace>
@@ -31,6 +35,29 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+
+    <Reference Include="System"/>
+    
+    <Reference Include="System.Core"/>
+    <Reference Include="System.Xml.Linq"/>
+    <Reference Include="System.Data.DataSetExtensions"/>
+    
+    
+    <Reference Include="Microsoft.CSharp"/>
+    
+    <Reference Include="System.Data"/>
+    
+    <Reference Include="System.Net.Http"/>
+    
+    <Reference Include="System.Xml"/>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+ </Project>
+
 Lab3_1
     <Reference Include="PresentationCore" />
     <Reference Include="RevitAPI">
@@ -47,27 +74,28 @@ Lab3_1
 
     <Reference Include="System" />
     <Reference Include="System.Core" />
- master
+
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
- Lab3_1
+
     <Reference Include="WindowsBase" />
 
-master
+
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-Lab3_1
+
   <ItemGroup>
     <Content Include="png\button.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
- master
+
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
+
