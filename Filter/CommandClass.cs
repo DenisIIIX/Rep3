@@ -36,6 +36,8 @@ namespace Filter
                 int count = 0;
                 double maxL = double.MinValue;
                 double minL = double.MaxValue;
+                Wall maxWall = null;
+                Wall minWall = null;
 
                 foreach (Wall wall in walls)
                 {
@@ -45,8 +47,16 @@ namespace Filter
                     double lengthM = UnitUtils.ConvertFromInternalUnits(
                         lengthParam.AsDouble(), DisplayUnitType.DUT_METERS);
 
-                    if (lengthM > maxL) maxL = lengthM;
-                    if (lengthM < minL) minL = lengthM;
+                    if (lengthM > maxL) 
+                    {
+                        maxL = lengthM; 
+                        maxWall=wall;
+                    }
+                    if (lengthM < minL)
+                    { 
+                        minL = lengthM;
+                        minWall=wall;
+                    }
 
                     count++;
                 }
@@ -62,11 +72,11 @@ namespace Filter
                     double lengthM = UnitUtils.ConvertFromInternalUnits(
                          lengthParam.AsDouble(), DisplayUnitType.DUT_METERS);
 
-                    if (lengthM == maxL)
+                    if (wall == maxWall)
                     {
                         commentParam.Set("Максимальная длина");
                     }
-                    else if (lengthM == minL)
+                    else if (wall == minWall)
                     {
                         commentParam.Set("Минимальная длина");
                     }
